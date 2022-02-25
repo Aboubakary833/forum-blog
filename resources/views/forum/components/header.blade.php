@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-2">
                 <div class="logo-box">
-                    <a href="index.html" class="logo"><img src="images/logo-black.png" alt="logo"></a>
+                    <a href="index.html" class="logo"><img src="{{ asset('forum/images/logo.png') }}" width='75px' alt="logo"></a>
                     <div class="user-action">
                         <div class="search-menu-toggle icon-element icon-element-xs shadow-sm mr-1" data-toggle="tooltip" data-placement="top" title="Search">
                             <i class="la la-search"></i>
@@ -42,7 +42,7 @@
                         </div>
                     </form>
                     <div class="nav-right-button">
-                        <a href="#" class="btn theme-btn"><i class="la la-user mr-1"></i> Se connecter</a>
+                        <a href="{{ route('login') }}" class="btn theme-btn"><i class="la la-user mr-1"></i> Se connecter</a>
                     </div><!-- end nav-right-button -->
                 </div><!-- end menu-wrapper -->
             </div><!-- end col-lg-10 -->
