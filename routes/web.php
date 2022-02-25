@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\blogController;
+use App\Http\Controllers\forumController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('forum.index');
+// });
+Route::get('/', [forumController::class, 'accueil'])->name('accueil');
+Route::get('/Blog', [blogController::class, 'index'])->name('blog');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
