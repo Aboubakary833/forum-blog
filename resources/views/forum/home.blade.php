@@ -25,8 +25,8 @@
                Vous aider, Apprendre, Partager vos connaissances.
             </p>
             <div class="hero-btn-box py-4">
-                <a href="signup.html" class="btn theme-btn mr-2">Joindre la communaté</a>
-                <a href="ask-question.html" class="btn theme-btn theme-btn-outline">Poser une question</a>
+                <a href="{{ route('register') }}" class="btn theme-btn mr-2">Joindre la communauté</a>
+                <a href="{{ route('ask_question') }}" class="btn theme-btn theme-btn-outline">Poser une question</a>
             </div>
         </div><!-- end hero-content -->
         <div class="row">
@@ -85,13 +85,7 @@
         </div><!-- end hero-list -->
     </div><!-- end container -->
 </section>
-<!--======================================
-        END HERO AREA
-======================================-->
 
-<!-- ================================
-         START QUESTION AREA
-================================= -->
 <section class="question-area pt-80px pb-30px">
     <div class="container">
         <div class="row">
@@ -99,19 +93,11 @@
                 <div class="sidebar pb-45px position-sticky top-0">
                     <ul class="generic-list-item generic-list-item-highlight fs-15">
                         <li class="lh-26"><a href="index.html"><i class="la la-home mr-1 text-black"></i> Accueil</a></li>
-                        <li class="lh-26 active"><a href="home-3.html"><i class="la la-globe mr-1 text-black"></i> HTML 5</a></li>
-                        <li class="lh-26"><a href="tags-list.html"><i class="la la-tags mr-1 text-black"></i> CSS 3</a></li>
-                        <h6>Framework Css</h6>
-                        <li class="lh-26"><a href="user-list.html"><i class="la la-user mr-1 text-black"></i> Bootstrap</a></li>
-                        <li class="lh-26"><a href="badges-list.html"><i class="la la-id-badge mr-1 text-black"></i> Tailwind css</a></li>
-                        <h6>Javascript</h6>
-                        <li class="lh-26"><a href="category-list.html"><i class="la la-sort mr-1 text-black"></i> React js</a></li>
-                        <li class="lh-26"><a href="job-list.html"><i class="la la-mouse mr-1 text-black"></i> Angular</a></li>
-                        <li class="lh-26"><a href="companies.html"><i class="la la-briefcase mr-1 text-black"></i> Vuejs</a></li>
-                        <h6>PHP</h6>
-                        <li class="lh-26"><a href="category-list.html"><i class="la la-sort mr-1 text-black"></i> Laravel</a></li>
-                        <li class="lh-26"><a href="job-list.html"><i class="la la-mouse mr-1 text-black"></i> Codeigniter</a></li>
-                        <li class="lh-26"><a href="companies.html"><i class="la la-briefcase mr-1 text-black"></i> Symphony</a></li>
+                        <li class="lh-26 active"><a href="#"><img src="{{ asset('forum/images/html-5.png') }}" alt="" srcset=""> HTML 5</a></li>
+                        <li class="lh-26"><a href="#"><img src="{{ asset('forum/images/css.png') }}" alt="" width="32px" srcset=""> CSS 3</a></li>
+                        <li class="lh-26"><a href="#"><img src="{{ asset('forum/images/bootstrap.png') }}" class="ml-1" alt="" width="22px"> Bootstrap</a></li>
+                        <li class="lh-26"><a href="#"><img src="{{ asset('forum/images/physics.png') }}"  class="ml-1" alt="" width="22px">React js</a></li>
+                        <li class="lh-26"><a href="#"><img src="{{ asset('forum/images/larvel.png') }}" class="ml-1" alt="" width="22px" > Laravel</a></li>
                     </ul>
                 </div><!-- end sidebar -->
             </div><!-- end col-lg-2 -->
@@ -409,144 +395,7 @@
                                 </div>
                             </div>
                         </div><!-- end media -->
-                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
-                            <div class="votes text-center votes-2">
-                                <div class="vote-block">
-                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">0</span>
-                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
-                                </div>
-                                <div class="answer-block my-2">
-                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
-                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
-                                </div>
-                                <div class="view-block">
-                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
-                                    <span class="view-text d-block fs-13 lh-18">views</span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Bootstrap select pass value with disabled</a></h5>
-                                <p class="mb-2 truncate lh-20 fs-15">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <div class="tags">
-                                    <a href="#" class="tag-link">javascript</a>
-                                    <a href="#" class="tag-link">bootstrap-4</a>
-                                    <a href="#" class="tag-link">jquery</a>
-                                    <a href="#" class="tag-link">select</a>
-                                </div>
-                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
-                                    <a href="user-profile.html" class="media-img d-block">
-                                        <img src="images/img3.jpg" alt="avatar">
-                                    </a>
-                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
-                                        <div>
-                                            <h5 class="pb-1"><a href="user-profile.html">Arden Smith</a></h5>
-                                            <div class="stats fs-12 d-flex align-items-center lh-18">
-                                                <span class="text-black pr-2" title="Reputation score">224</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>16</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>93</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>136</span>
-                                            </div>
-                                        </div>
-                                        <small class="meta d-block text-right">
-                                            <span class="text-black d-block lh-18">asked</span>
-                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end media -->
-                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
-                            <div class="votes text-center votes-2">
-                                <div class="vote-block">
-                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">0</span>
-                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
-                                </div>
-                                <div class="answer-block my-2">
-                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
-                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
-                                </div>
-                                <div class="view-block">
-                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
-                                    <span class="view-text d-block fs-13 lh-18">views</span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Bootstrap select pass value with disabled</a></h5>
-                                <p class="mb-2 truncate lh-20 fs-15">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <div class="tags">
-                                    <a href="#" class="tag-link">javascript</a>
-                                    <a href="#" class="tag-link">bootstrap-4</a>
-                                    <a href="#" class="tag-link">jquery</a>
-                                    <a href="#" class="tag-link">select</a>
-                                </div>
-                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
-                                    <a href="user-profile.html" class="media-img d-block">
-                                        <img src="images/img3.jpg" alt="avatar">
-                                    </a>
-                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
-                                        <div>
-                                            <h5 class="pb-1"><a href="user-profile.html">Arden Smith</a></h5>
-                                            <div class="stats fs-12 d-flex align-items-center lh-18">
-                                                <span class="text-black pr-2" title="Reputation score">224</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>16</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>93</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>136</span>
-                                            </div>
-                                        </div>
-                                        <small class="meta d-block text-right">
-                                            <span class="text-black d-block lh-18">asked</span>
-                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end media -->
-                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
-                            <div class="votes text-center votes-2">
-                                <div class="vote-block">
-                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
-                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
-                                </div>
-                                <div class="answer-block answered my-2">
-                                    <span class="answer-counts d-block lh-20 fw-medium">3</span>
-                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
-                                </div>
-                                <div class="view-block">
-                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
-                                    <span class="view-text d-block fs-13 lh-18">views</span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Bootstrap select pass value with disabled</a></h5>
-                                <p class="mb-2 truncate lh-20 fs-15">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <div class="tags">
-                                    <a href="#" class="tag-link">javascript</a>
-                                    <a href="#" class="tag-link">bootstrap-4</a>
-                                    <a href="#" class="tag-link">jquery</a>
-                                    <a href="#" class="tag-link">select</a>
-                                </div>
-                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
-                                    <a href="user-profile.html" class="media-img d-block">
-                                        <img src="images/img3.jpg" alt="avatar">
-                                    </a>
-                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
-                                        <div>
-                                            <h5 class="pb-1"><a href="user-profile.html">Arden Smith</a></h5>
-                                            <div class="stats fs-12 d-flex align-items-center lh-18">
-                                                <span class="text-black pr-2" title="Reputation score">224</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>16</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>93</span>
-                                                <span class="pr-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>136</span>
-                                            </div>
-                                        </div>
-                                        <small class="meta d-block text-right">
-                                            <span class="text-black d-block lh-18">asked</span>
-                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end media -->
+
                         <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
                             <div class="votes text-center votes-2">
                                 <div class="vote-block">
@@ -635,7 +484,7 @@
                 <div class="sidebar">
                     <div class="card card-item">
                         <div class="card-body">
-                            <h3 class="fs-17 pb-3">Related Questions</h3>
+                            <h3 class="fs-17 pb-3">questions connexes</h3>
                             <div class="divider"><span></span></div>
                             <div class="sidebar-questions pt-3">
                                 <div class="media media-card media--card media--card-2">
@@ -763,9 +612,9 @@
                         </div>
                     </div><!-- end card -->
                     <div class="ad-card">
-                        <h4 class="text-gray text-uppercase fs-13 pb-3 text-center">Advertisements</h4>
+                        <h4 class="text-gray text-uppercase fs-13 pb-3 text-center">Publicités</h4>
                         <div class="ad-banner mb-4 mx-auto">
-                            <span class="ad-text">290x500</span>
+                            <span class="" > <img src="{{ asset('forum/images/company-logo.png') }}" alt="" width="100%" height="400px"> </span>
                         </div>
                     </div><!-- end ad-card -->
                 </div><!-- end sidebar -->
@@ -773,118 +622,5 @@
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end question-area -->
-<!-- ================================
-         END QUESTION AREA
-================================= -->
-
-<!-- ================================
-         START CTA AREA
-================================= -->
-<section class="cta-area pt-80px pb-80px bg-radial-gradient-gray">
-    <div class="container">
-        <div class="cta-heading media align-items-center justify-content-center">
-            <img src="images/undraw-team-up.svg" alt="undraw-questions" class="undraw-illustration mr-5">
-            <div class="media-body flex-inherit">
-                <h2 class="section-title pb-3 theme-font-2">Disilab for your Teams</h2>
-                <p class="section-desc pb-4">– Collaborate and share knowledge with a private group.</p>
-                <a href="free-demo.html" class="btn theme-btn">Create a free Team</a>
-            </div>
-        </div><!-- end cta-heading -->
-    </div><!-- end container -->
-</section><!-- end cta-area -->
-<!-- ================================
-         END CTA AREA
-================================= -->
-
-<!-- ================================
-         END FOOTER AREA
-================================= -->
-<section class="footer-area pt-80px position-relative">
-    <span class="vertical-bar-shape vertical-bar-shape-1"></span>
-    <span class="vertical-bar-shape vertical-bar-shape-2"></span>
-    <span class="vertical-bar-shape vertical-bar-shape-3"></span>
-    <span class="vertical-bar-shape vertical-bar-shape-4"></span>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 responsive-column-half">
-                <div class="footer-item">
-                    <a href="index.html" class="d-inline-block">
-                        <img src="images/logo-black.png" alt="footer logo" class="footer-logo">
-                    </a>
-                    <p class="py-3 fs-15 lh-24">Exercitationem expedita id illum ipsum pariatur quia ratione sapiente soluta totam voluptate!</p>
-                    <div class="social-icon-box">
-                        <a class="mr-1 icon-element icon-element-sm shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Follow on Facebook">
-                            <svg focusable="false" class="svg-inline--fa fa-facebook-f fa-w-10" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
-                        </a>
-                        <a class="mr-1 icon-element icon-element-sm shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Follow on Twitter">
-                            <svg focusable="false" class="svg-inline--fa fa-twitter fa-w-16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-                        </a>
-                        <a class="mr-1 icon-element icon-element-sm shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Follow on Linkedin">
-                            <svg focusable="false" class="svg-inline--fa fa-linkedin fa-w-14" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
-                        </a>
-                        <a class="mr-1 icon-element icon-element-sm shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Follow on Instagram">
-                            <svg focusable="false" class="svg-inline--fa fa-instagram-square fa-w-14" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"></path></svg>
-                        </a>
-                    </div>
-                </div><!-- end footer-item -->
-            </div><!-- end col-lg-3 -->
-             <div class="col-lg-3 responsive-column-half">
-                <div class="footer-item">
-                    <h3 class="fs-18 fw-bold pb-2">Company</h3>
-                    <ul class="generic-list-item generic-list-item-hover-underline pt-3">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="advertising.html">Advertising</a></li>
-                    </ul>
-                </div><!-- end footer-item -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 responsive-column-half">
-                <div class="footer-item">
-                    <h3 class="fs-18 fw-bold pb-2">Legal Stuff</h3>
-                    <ul class="generic-list-item generic-list-item-hover-underline pt-3">
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-and-conditions.html">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html">Cookie Policy</a></li>
-                    </ul>
-                </div><!-- end footer-item -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 responsive-column-half">
-                <div class="footer-item">
-                    <h3 class="fs-18 fw-bold pb-2">Help</h3>
-                    <ul class="generic-list-item generic-list-item-hover-underline pt-3">
-                        <li><a href="faq.html">Knowledge Base</a></li>
-                        <li><a href="contact.html">Support</a></li>
-                    </ul>
-                </div><!-- end footer-item -->
-            </div><!-- end col-lg-3 -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-    <hr class="border-top-gray my-4">
-    <div class="container">
-        <div class="row align-items-center pb-4 copyright-wrap">
-            <div class="col-lg-6">
-                <p class="copyright-desc copyright--desc fs-14">Copyright &copy; 2021 <a href="https://techydevs.com/">TechyDevs</a> Inc.</p>
-            </div><!-- end col-lg-6 -->
-            <div class="col-lg-6">
-                <ul class="generic-list-item generic-list-item-hover-underline generic-list-item-inline text-right">
-                    <li><a href="free-demo.html">Team</a></li>
-                    <li><a href="talent.html">Talent</a></li>
-                    <li><a href="advertising.html">Advertising</a></li>
-                </ul>
-            </div><!-- end col-lg-6 -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-</section><!-- end footer-area -->
-<!-- ================================
-          END FOOTER AREA
-================================= -->
-
-<!-- start back to top -->
-<div id="back-to-top" data-toggle="tooltip" data-placement="top" title="Return to top">
-    <i class="la la-arrow-up"></i>
-</div>
-<!-- end back to top -->
-
-<!-- template js files -->
+@include('forum.components.footer')
 @endsection
