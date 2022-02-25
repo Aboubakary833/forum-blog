@@ -1,4 +1,8 @@
-<?php
+
+
+ <?php
+
+ require_once __DIR__ . '/forumRoutes/index.php';
 
 use App\Http\Controllers\blogController;
 use App\Http\Controllers\forumController;
@@ -15,9 +19,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('forum.index');
-// });
 Route::get('/', [forumController::class, 'accueil'])->name('accueil');
 Route::get('/Blog', [blogController::class, 'index'])->name('blog');
 
@@ -25,3 +26,4 @@ Route::get('/Blog', [blogController::class, 'index'])->name('blog');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
