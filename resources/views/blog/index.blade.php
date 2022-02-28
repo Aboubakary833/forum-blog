@@ -31,7 +31,7 @@
                                         <span class="cat-number">{{$item->order}}</span>
                                     </a>
                                 @endforeach
-                                
+
                             </div>
                         </div>
                     </div><!-- end card -->
@@ -138,11 +138,12 @@
                         </div><!-- end card -->
                     </div><!-- end col-lg-6 -->
                     @endforeach
-                    
+
                 </div><!-- end row -->
                 <div class="pager text-center pt-30px">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination generic-pagination justify-content-center">
+                        {{$post->links()}}
+                        {{-- <ul class="pagination generic-pagination justify-content-center">
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Previous">
                                     <span aria-hidden="true"><i class="la la-arrow-left"></i></span>
@@ -159,9 +160,9 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </nav>
-                    <p class="fs-13 pt-3">Showing 1-6 results of 22 articles</p>
+
                 </div>
             </div><!-- end col-lg-8 -->
         </div><!-- end row -->

@@ -10,7 +10,7 @@ use TCG\Voyager\Models\Post;
 class blogController extends Controller
 {
     public function index(){
-        $posts = Post::join('users', 'users.id', '=', 'posts.author_id')->get();
+        $posts = Post::join('users', 'users.id', '=', 'posts.author_id')->paginate(2);
         $category = Category::all();
         // dd($posts);
         return view('blog.index', ['category' => $category, 'post' => $posts]);
