@@ -1,7 +1,12 @@
-<?php
+
+
+ <?php
+
+ require_once __DIR__ . '/forumRoutes/index.php';
 
 use App\Http\Controllers\blogController;
 use App\Http\Controllers\forumController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,14 +19,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('forum.index');
-// });
-Route::get('/', [forumController::class, 'accueil'])->name('accueil');
+Route::get('/',[HomeController::class,'index'])->name('home');
+// Route::get('/', [forumController::class, 'accueil'])->name('accueil');
 Route::get('/Blog', [blogController::class, 'index'])->name('blog');
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
