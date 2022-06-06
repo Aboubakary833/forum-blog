@@ -19,9 +19,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',[HomeController::class,'index'])->name('home');
-// Route::get('/', [forumController::class, 'accueil'])->name('accueil');
+// Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/', [forumController::class, 'accueil'])->name('accueil');
 Route::get('/Blog', [blogController::class, 'index'])->name('blog');
+Route::get('/Post-Detail/{slug}', [blogController::class, 'singleBlog'])->name('single');
 
 
 Route::group(['prefix' => 'admin'], function () {

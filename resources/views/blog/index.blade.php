@@ -117,12 +117,12 @@
                     @foreach ($post as $item)
                     <div class="col-lg-6 responsive-column-half">
                         <div class="card card-item hover-y">
-                            <a href="blog-single.html" class="card-img">
+                            <a href="{{asset('Post-Detail/'.$item->slug)}}" class="card-img">
                                 <img class="lazy" src="{{asset('storage/'.$item->image)}}"  alt="Card image">
                             </a>
                             <div class="card-body pt-0">
                                 <a href="#" class="card-link">{{$item->title}}</a>
-                                <h5 class="card-title fw-medium"><a href="blog-single.html">{{$item->excerpt}}</a></h5>
+                                <h5 class="card-title fw-medium"><a href="{{asset('Post-Detail/'.$item->slug)}}">{{$item->excerpt}}</a></h5>
                                 <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
                                     <a href="#" class="media-img media-img--sm d-block mr-2 rounded-full">
                                         <img src="{{asset('storage/'.$item->avatar)}}" alt="avatar" class="rounded-full">
